@@ -11,6 +11,13 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route("/login", methods=['GET', 'POST'])
+def login ():
+    if request.method == 'GET':
+         return render_template('login.html')
+    else:
+        print("error 404")
+
 @app.route("/cadastroempresas", methods=['GET', 'POST'])
 def cadempresas():
     if request.method == 'GET':
@@ -22,6 +29,19 @@ def cadempresas():
         registro['timeregister'] = now
         print(registro)
         send_data(registro,'empresas')
+        return redirect('home')
+
+@app.route("/cadastroindicacoes", methods=['GET', 'POST'])
+def cadindicacoes():
+    if request.method == 'GET':
+         return render_template('cadastroindicacoes.html')
+    else:
+        registro = request.form.to_dict()
+        now = datetime.now()
+        now = now.strftime('%d-%m-%Y_%H:%M:%S')
+        registro['timeregister'] = now
+        print(registro)
+        send_data(registro,'indicadores')
         return redirect('home')
 
 @app.route("/cadastrovendas", methods=['GET', 'POST'])
@@ -43,11 +63,11 @@ def veremp():
 
     return render_template('verempresas.html', bananinha=data)
 
-@app.route("/verindicadores")
+@app.route("/verindicacoes")
 def verind():
     data = json.loads(get_data('indicadores'))
 
-    return render_template('verindicadores.html', bananinha=data)
+    return render_template('verindicacoes.html', bananinha=data)
 
 @app.route("/vervendas")
 def vervendas():

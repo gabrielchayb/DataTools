@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Ver Empresas - DataTools</title>
+    <title>Ver Indicações - DataTools</title>
 
     <!-- Icons font CSS-->
     <link href="/static/" rel="stylesheet" media="all">
@@ -35,7 +35,7 @@
         <div class="wrapper wrapper--w1000">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title">Ver Empresas - DataTools</h2>
+                    <h2 class="title">Ver Indicações - DataTools</h2>
                         <div class="row row-space">
                             <div class="col-2">
                                 <table class="table">
@@ -43,11 +43,11 @@
                                       <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Nome</th>
-                                        <th scope="col">Cnpj</th>
                                         <th scope="col">Cidade</th>
-                                        <th scope="col">Fat. Anual</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Setor</th>
+                                        <th scope="col">Emp. Beneficiada</th>
+                                        <th scope="col">Banco</th>
+                                        <th scope="col">Bônus Repassado </th>
+                                        <th scope="col">Valor Comissão </th>
 
                                         
                                       </tr>
@@ -57,11 +57,10 @@
                                       <tr>
                                         <th scope="row">{{i['empty_space']}}</th>
                                         <td>{{i['nome']}}</td>
-                                        <td>{{i['cnpj']}}</td>
                                         <td>{{i['cidade']}}</td>
-                                        <td>{{i['faturamento_anual']}}</td>
-                                        <td>{{i['email']}}</td>
-                                        <td>{{i['setor']}}</td>
+                                        <td>{{i['empresa_beneficiada']}}</td>
+                                        <td>{{i['bonus_pct']}}</td>
+                                        <td>{{i['comissao_repassada']}}</td>
                                         
                                       </tr>
                                     {% endfor %}
