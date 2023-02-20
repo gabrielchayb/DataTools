@@ -223,6 +223,13 @@ h6 {
     background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
 }
 
+.bg-gra-03 {
+    background: -webkit-gradient(linear, left bottom, right top, from(#f5f5f5), to(#fa4251));
+    background: -webkit-linear-gradient(bottom left, #f5f5f5 0%, #fa4251 100%);
+    background: -moz-linear-gradient(bottom left, #f5f5f5 0%, #fa4251 100%);
+    background: -o-linear-gradient(bottom left, #f5f5f5 0%, #fa4251 100%);
+    background: linear-gradient(to top right, #f5f5f5 0%, #fa4251 100%);
+}
 
 /* ==========================================================================
    #SPACING
