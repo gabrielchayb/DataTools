@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reportlab_qrcode/__init__.py
+reportlab_qrcode.egg-info/PKG-INFO
+reportlab_qrcode.egg-info/SOURCES.txt
+reportlab_qrcode.egg-info/dependency_links.txt
+reportlab_qrcode.egg-info/requires.txt
+reportlab_qrcode.egg-info/top_level.txt

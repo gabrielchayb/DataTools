@@ -1,0 +1,7 @@
+qrcode
+reportlab
+
+[testing]
+pytest
+pyzbar
+pillow
