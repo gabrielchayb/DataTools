@@ -3,7 +3,8 @@ Projeto DataTools - Criado por Gabriel Ribeiro Filice Chayb
 O DataTools foi um projeto desenvolvido para solucionar o problema de uma empresa fictícia da área fiscal. Como ela tinha várias filiais e nenhum tipo de controle sobre os dados na ponta, o Datatools é um software que preenche o banco de dados com várias informaçõs que podem ser úteis para esse negócio, além de vizualizar esses dados com facilidade e até mesmo imprimi-los em formato PDF. A aplicação fictícia trabalha integrações entre Flask e MongoDB, com um FrontEnd responsivo e didático feito com Bootstrap. 
 
 Back-End: Python
-ORM: MongoDB
+ORM: PyMongo
+Banco de Dados Não Relacional: MongoDB
 Front-End: Bootstrap (HTML e CSS) 
 
 - Objetivo: Proporcionar maior agilidade, desenvolvimento e praticidade no trato diário de dados de pequenos e médios negócios com seus dados, além de startups, com um modelo Whitelabel.
